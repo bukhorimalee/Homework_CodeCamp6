@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+        }
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <h2>1. ค้นหาข้อมูลแท็ก&lt;!doctype&gt;มีหน้าที่อะไร</h2>
+            <pre>
+            การประกาศว่าเอกสารเว็บเพจนั้นสร้างขึ้นมาโดยยึดหลักตามมาตราฐานใด ซึ่งมาตราฐานที่เราใช้กันทุกวันนี้กับการแสดงผลเว็บเพจ
+            จะมีที่ใช้กันอยู่ 3 มาตราฐาน คือ
+            - HTML
+            - XHTML
+            - HTML 5
+            ทั้ง 3 มาตราฐาน จะมีการแบ่งกฎในการพัฒนาแตกต่างกันออกไปอีก 3 ประเภท คือ
+            - Transitional
+            &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+            - Strict
+            &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+            - Frameset ในบทความนี้ผมจะขอกล่าวถึง และยกตัวอย่างเพียงในส่วนของ XHTML เท่านั้นครับ (ไว้ผมจะพูดถึงเรื่อง HTML5 อีกครั้งเร็ว ๆ นี้)
+            &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt;
+        </pre>
+        </div>
+        <div>
+            <h2>2. ถ้าอยากให้มี Tooltip ใน Tag นั้นต้องใช้ attribute ใด?</h2>
+            <pre> แบบที่ 1. ไม่ก็ใส่ alt,title เช่น</p> &lt;p title="asd">ตัวอย่าง&lt;/p> </pre>
+            <pre> title="asd">แตะเมาส์ตรงนี้เพื่อดูตัวอย่าง</pre>
+
+            <div class="tooltip">แบบที่ 2. Hover over me
+                <span class="tooltiptext">Tooltip text</span>
+            </div>
+        </div>
+        <div>
+            <h2>3. แท็ก &lt;b&gt;,&lt;i&gt; &lt;strong&gt;,&lt;em&gt; อย่างไร </h2>
+            <pre> <i> แท็ก&lt;i&gt; เป็นตัวเอียง Lorem ipsum</i> <b> แท็ก&lt;b&gt; เป็นตัวหน้าpopular filler text in history.</b></pre>
+        </div>
+        <div>
+            <h2>4. หา &lt;tag&gt; ทีสามาถแสดงข้อความกลับหลังได้</h2>
+        </div>
+        <pre> &lt;p&gt;&lt;bdo dir="rtl">This paragraph will go right-to-left.&lt;/bdo>
+    </pre>
+
+        <pre><bdo dir="rtl">This paragraph will go right-to-left.</bdo>
+        </pre>
+
+    </section>
+</body>
+
+</html>
