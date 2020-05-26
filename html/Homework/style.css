@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    height: 60px;
+    background-color: #333;
+    border-bottom: 2px solid #ccc;
+}
+
+nav .logo {
+    float: left;
+}
+
+nav .logo h1 {
+    margin-top: 15px;
+    color: #fff;
+}
+
+nav ul.menu {
+    float: right;
+    list-style: none;
+}
+
+nav ul.menu li {
+    float: left;
+    padding: 19px;
+}
+
+nav ul.menu li:hover {
+    padding: 19px;
+    background-color: #000;
+}
+
+nav ul.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* end nav styling */
