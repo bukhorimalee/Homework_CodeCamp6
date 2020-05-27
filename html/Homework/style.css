@@ -1,44 +1,204 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-nav {
-    height: 60px;
-    background-color: #333;
-    border-bottom: 2px solid #ccc;
-}
-
-nav .logo {
-    float: left;
-}
-
-nav .logo h1 {
-    margin-top: 15px;
-    color: #fff;
-}
-
-nav ul.menu {
-    float: right;
-    list-style: none;
-}
-
-nav ul.menu li {
-    float: left;
-    padding: 19px;
-}
-
-nav ul.menu li:hover {
-    padding: 19px;
-    background-color: #000;
-}
-
-nav ul.menu li a {
-    color: white;
-    text-decoration: none;
-}
-
-
-/* end nav styling */
+         @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
+         * {
+             box-sizing: border-box;
+             margin: 0;
+             padding: 0;
+             font-family: Arial;
+             font-family: 'Lato', sans-serif;
+         }
+         
+         .container {
+             display: grid;
+             grid-template-columns: 300px 1fr;
+             grid-template-areas: "nav content" "nav footer";
+             height: 100vh;
+         }
+         
+         nav {
+             grid-area: nav;
+             padding: 3rem;
+             text-align: center;
+             background: linear-gradient(to bottom, #ec2f4b, #009fff);
+         }
+         
+         nav ul {
+             list-style: none;
+         }
+         
+         nav ul li {
+             margin-top: 3rem;
+         }
+         
+         nav ul li a {
+             text-decoration: none;
+             color: #ccc;
+             text-transform: uppercase;
+             font-size: 1.5rem;
+             transition: .3s;
+             border-bottom: 2px solid transparent;
+         }
+         
+         nav ul li a:hover {
+             color: #fff;
+             padding-bottom: 10px;
+             border-bottom: 2px solid #fff;
+         }
+         
+         .content {
+             padding: 5rem;
+             background-color: #eee;
+             color: #333;
+             grid-area: content;
+         }
+         
+         .content .content-flex {
+             padding: 7rem 2rem;
+             display: flex;
+             justify-content: space-around;
+         }
+         
+         .content .content-flex .content-items-left {
+             width: 60%;
+             padding: 2rem;
+         }
+         
+         .content .content-flex .content-items-left h1 {
+             font-size: 5rem;
+             font-weight: 300;
+         }
+         
+         .content .content-flex .content-items-left p {
+             margin-top: 2rem;
+             font-size: 1.5rem;
+             color: #a1a1a1;
+             line-height: 1.5;
+             padding-left: 2px;
+         }
+         
+         .content .content-flex .content-items-left .hire-me {
+             display: inline-block;
+             margin-top: 2rem;
+             padding: 1rem 2rem;
+             border-radius: 5px;
+             background: #c451ed;
+             text-decoration: none;
+             color: #fff;
+             transition: .3s;
+         }
+         
+         .content .content-flex .content-items-left .hire-me:hover {
+             background: #f64f59;
+             transform: translate(-3px, -3px);
+             box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
+         }
+         
+         .content .content-flex .content-items-right {
+             width: 30%;
+         }
+         
+         .content .content-flex .content-items-right img {
+             width: 100%;
+             border-radius: 50%;
+         }
+         
+         footer {
+             grid-area: footer;
+             height: 100px;
+         }
+         
+         footer .footer-flex {
+             height: 100px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+         
+         footer .footer-flex ul.social {
+             width: 50%;
+             display: flex;
+             justify-content: space-around;
+             list-style: none;
+         }
+         
+         footer .footer-flex ul.social a {
+             color: #ccc;
+             font-size: 3rem;
+             transition: .3s;
+         }
+         
+         footer .footer-flex ul.social a:hover {
+             color: #333;
+         }
+         
+         @media screen and (max-width: 480px) {
+             .container {
+                 grid-template-columns: 1fr;
+                 grid-template-areas: "nav" "content" "footer";
+             }
+             nav ul li {
+                 margin: 2rem;
+             }
+             .content {
+                 padding: 2rem;
+             }
+             .content .content-flex {
+                 padding: 2rem 0rem;
+                 flex-direction: column;
+             }
+             .content .content-flex .content-items-left {
+                 order: 2;
+                 width: 100%;
+                 text-align: center;
+             }
+             .content .content-flex .content-items-left h1 {
+                 font-size: 2rem;
+             }
+             .content .content-flex .content-items-right {
+                 order: 1;
+                 width: 80%;
+                 margin: auto;
+             }
+             footer {
+                 padding: 1rem;
+             }
+             footer .footer-flex ul.social {
+                 width: 100%;
+             }
+         }
+         
+         .rwd-table {
+             background: #34495E;
+             color: #fff;
+             border-radius: .4em;
+             overflow: hidden;
+             padding: 10px;
+         }
+         
+         tr,
+         td {
+             padding: 20px;
+             margin: 20px;
+         }
+         
+         th {
+             padding: 20px;
+             margin: 20px;
+             color: wheat;
+         }
+         
+         table tr td a {
+             color: teal;
+         }
+         
+         @media screen and (max-width: 480px) {
+             tr,
+             td {
+                 padding: 5px;
+                 margin: 5px;
+             }
+             th {
+                 padding: 5px;
+                 margin: 5px;
+                 color: wheat;
+             }
+         }
