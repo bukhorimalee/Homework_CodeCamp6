@@ -5,9 +5,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking.html</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 17px;
+            padding: 8px;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            margin: 0 -16px;
+        }
+        
+        .col-25 {
+            -ms-flex: 25%;
+            /* IE10 */
+            flex: 25%;
+        }
+        
+        .col-50 {
+            -ms-flex: 50%;
+            /* IE10 */
+            flex: 50%;
+        }
+        
+        .col-75 {
+            -ms-flex: 75%;
+            /* IE10 */
+            flex: 75%;
+        }
+        
+        .col-12 {
+            -ms-flex: 12%;
+            /* IE10 */
+            flex: 12%;
+        }
+        
+        .col-25,
+        .col-50,
+        .col-75 {
+            padding: 20px 20px 5px 20px;
+        }
+        
+        .container {
+            background-color: #f2f2f2;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgrey;
+            border-radius: 3px;
+            width: 500px;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-50">
+                        <label for="Flying">Flying from:</label>
+                        <select name="Flying" id="Flying" class="form-control">
+                    <option value="volvo">ไทย</option>
+                    <option value="saab">ลาว</option>
+                    <option value="opel">กัมพูชา</option>
+                    <option value="audi">พม่า</option>
+                    </select>
+                    </div>
+                    <div class="col-50">
+                        <label for="to">To:</label>
+                        <select name="to" id="to" class="form-control">
+                        <option value="volvo">ไทย</option>
+                        <option value="saab">ลาว</option>
+                        <option value="opel">กัมพูชา</option>
+                        <option value="audi">พม่า</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- End Flying -->
+
+                <div class="row">
+                    <div class="col-50">
+                        <span class="form-label">Departing</span>
+                        <input class="form-control" type="date" required="">
+                    </div>
+                    <div class="col-50">
+                        <span class="form-label">Returning</span>
+                        <input class="form-control" type="date" required="">
+                    </div>
+                </div>
+                <!-- End Date -->
+                <div class="row">
+                    <div class="col-25">
+                        <span>Adult</span><br>
+                        <input type="number" id="quantity" name="quantity" min="1" max="5" value="1" class="form-control">
+                    </div>
+                    <div class="col-25">
+                        <span> Child </span><br>
+                        <input type="number" id="quantity" name="quantity" min="0" max="5" value="0" class="form-control">
+                    </div>
+                    <div class="col-25">
+                        <span> Infant </span><br>
+                        <input type="number" id="quantity" name="quantity" min="0" max="5" value="0" class="form-control">
+                    </div>
+                    <div class="col-25">
+                        <span style="color: red;"> Currency </span><br>
+                        <select name="to" id="to" class="form-control">
+                            <option value="volvo">Bath</option>
+                            <option value="saab">Dollar</option>
+                            <option value="opel">chin</option>
+                            <option value="audi">jp</option>
+                            </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
 
 </body>
 
