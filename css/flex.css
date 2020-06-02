@@ -1,0 +1,36 @@
+    .flex-container {
+        display: flex;
+        /* flex-direction: column; */
+        /* flex-flow: row wrap; */
+        /* justify-content: space-around; */
+        background-color: skyblue;
+        height: 100vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    
+    .flex-items-1,
+    .flex-items-2,
+    .flex-items-3,
+    .flex-items-4,
+    .flex-items-5 {
+        width: 150px;
+        height: 150px;
+        background-color: #ccc;
+        margin: 10px;
+    }
+    
+    .flex-items-1 {
+        order: 0;
+    }
+    
+    .flex-items-2 {
+        order: wxw;
+    }
+    
+    .flex-items-3 {}
+    
+    .flex-items-4 {}
+    
+    .flex-items-5 {}

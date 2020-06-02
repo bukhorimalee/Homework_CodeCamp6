@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .w3-codespan {
+            color: crimson;
+            background-color: #f1f1f1;
+            padding-left: 4px;
+            padding-right: 4px;
+            font-size: 110%;
+        }
+        /* แบบที่1  */
+        
+        .classname {
+            animation-name: name1;
+            width: 100px;
+            height: auto;
+            background: red;
+            position: relative;
+            animation-duration: 5s;
+            padding: 10px;
+        }
+        
+        @keyframes name1 {
+            from {
+                left: 0px;
+                visibility: hidden;
+            }
+            to {
+                border: 10px solid blue;
+                display: none;
+                opacity: 0;
+                visibility: visible;
+            }
+        }
+        /* แบบที่2  */
+        
+        .classname2 {
+            animation-name: name2;
+            width: 100px;
+            height: auto;
+            background: red;
+            padding: 10px;
+            animation-iteration-count: infinite;
+            animation: 1s name2;
+        }
+        
+        @keyframes name2 {
+            0% {
+                background-color: palegoldenrod;
+            }
+            25% {
+                background-color: red;
+            }
+            50% {
+                background-color: pink;
+                visibility: hidden;
+                opacity: 0;
+            }
+            100% {
+                background-color: darkblue;
+            }
+        }
+        /* heading */
+        
+        .heading {
+            animation-duration: 2s 3s 4s;
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: mymove 5s infinite;
+            animation-timing-function: linear;
+            height: auto;
+            animation-delay: 2s;
+        }
+        
+        @keyframes mymove {
+            0% {
+                left: 0px;
+            }
+            60% {
+                left: 70px;
+            }
+            100% {
+                left: 200px;
+                opacity: 0%;
+            }
+        }
+        
+        .heading2 {
+            animation: heading2 5s infinite;
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+        
+        @keyframes heading2 {
+            0% {
+                animation-iteration-count: infinite;
+                background-color: blue;
+                visibility: hidden;
+                opacity: 1;
+            }
+            25% {
+                background-color: red;
+            }
+            50% {
+                background-color: slategrey;
+                visibility: visible;
+                display: none;
+                animation-delay: -5s;
+            }
+            75% {
+                background-color: seagreen;
+                opacity: 1;
+            }
+            100% {
+                background-color: sienna;
+                visibility: visible;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <h1>Lab2 CSS Animations</h1>
+        <td>
+            <ul>
+                <li><code class="w3-codespan">animation-name</code></li>
+                <li><code class="w3-codespan">animation-duration</code></li>
+                <li><code class="w3-codespan">animation-delay</code></li>
+                <li><code class="w3-codespan">animation-direction</code></li>
+                <li><code class="w3-codespan">animation-timing</code></li>
+                <li><code class="w3-codespan">animation-iteration-count</code></li>
+            </ul>
+            <ul>
+                <td>
+                    <li><code class="w3-codespan">ตั้งชื่อ animation</code></li>
+                    <li><code class="w3-codespan">การกำหนด ลักษณะก่อนและหลัง</code></li>
+                    <li><code class="w3-codespan">ระยะเวลาในการแสดงทั้งหมด</code></li>
+                    <li><code class="w3-codespan">ระยะเวลาก่อนการแสดง</code></li>
+                    <li><code class="w3-codespan">ทิศทางการวิ่ง</code></li>
+                    <li><code class="w3-codespan">ระยะเวลาต่อรอบ</code></li>
+                    <li><code class="w3-codespan">จำนวรครั้งที่แสดง</code></li>
+                    <td>
+            </ul>
+    </table>
+    <table>
+        <h1>@keyframes</h1>
+        <td>
+            <ul>
+                <li><code class="w3-codespan">ลองกำหนด @keyframes แบบ from to
+                    </code></li>
+                <li><code class="w3-codespan">ลองกำหนด @keyframes แบบ %
+                    </code></li>
+            </ul>
+            <ul>
+                <td>
+                    <li><code class="w3-codespan">color
+                        </code></li>
+                    <li><code class="w3-codespan">width</code></li>
+                    <li><code class="w3-codespan">border</code></li>
+                    <li><code class="w3-codespan">background-color</code></li>
+                    <li><code class="w3-codespan">position-relative</code></li>
+                    <li><code class="w3-codespan">show and hide</code></li>
+                    <td>
+            </ul>
+    </table>
+    </h2>
+    <div class="classname"> I'm Bukhori Train Animation animation-name: nameanimation-duration: 5s;
+    </div> <br>
+    <div class="classname2"> I'm Bukhori Train Animation animation-name2: nameanimation-duration: 5s;
+    </div>
+    <table>
+        <h2>Heading</h2>
+        <td>
+            <ul>
+                <li><code class="w3-codespan">ให้สร้าง animation ที่มีการใช้ delay และ direction
+                </code></li>
+                <li><code class="w3-codespan">กำหนด direction ทั้งสามแบบเพื่อเปรียบเทียบ
+                </code></li>
+            </ul>
+            <ul>
+                <td>
+                    <li><code class="w3-codespan">ให้การกำหนดการเคลื่อนจำนวน 5 ครั้ง
+                    </code></li>
+                    <li><code class="w3-codespan">ให้กำหนด keyframes เป็น 5 ช่วง</code></li>
+                    <td>
+            </ul>
+    </table>
+    <div class="heading"> I'm Bukhori Train Animation animation-name: headong;
+    </div>
+    <table>
+        <h2>Heading2</h2>
+        <td>
+            <ul>
+                <li><code class="w3-codespan">นำ animation ทั้งมารวมกันด้วย shorthand
+                </code></li>
+                <li><code class="w3-codespan">ใช้ keyframes เป็น % อย่างน้อย 5 ช่วง
+                </code></li>
+                <li><code class="w3-codespan">ให้มีอย่างน้อย 1 animation-iteration-count เป็น infinite
+                </code></li>
+            </ul>
+            <ul>
+                <td>
+                    <li><code class="w3-codespan">ให้ทำ animation เปลี่ยนสี
+                    </code></li>
+                    <li><code class="w3-codespan">ให้ทำ animation show, hide</code></li>
+                    <li><code class="w3-codespan">ให้ทำ animation เคลื่อนที่</code></li>
+                    <td>
+            </ul>
+    </table>
+    <div class="heading2"> I'm Bukhori Train Animation animation-name: headong2;
+</body>
+
+</html>

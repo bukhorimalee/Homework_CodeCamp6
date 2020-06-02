@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Review CSS</legend>
+            <div class="flex-container">
+                <div class="flex-items-1">
+                    <h2>1.CSS syntax (การเขียนคำสั่งใน CSS)</h2>
+                    <p><img src="https://www.w3schools.com/css/selector.gif" width="100%" alt="CSS selector"></p>
+                </div>
+                <div class="flex-items-2">
+                    <h2>2.Class, id, pseudo class, psedo element</h2>
+                    ID จะใช้ครั้งเดียวใน 1 หน้าเว็บ ส่วน class จะใช้กี่ครั้งก็ได้ <br> pseudo-class ใช้เพื่อกำหนดสถานะพิเศษขององค์ประกอบ <br>จัดองค์ประกอบเป็นองค์ประกอบเมื่อผู้ใช้เลื่อนเมาส์ไปใช้งาน สไตล์ที่เข้าชมและลิงค์ที่ไม่ได้เข้าชมแตกต่างกัน <br>จัดองค์ประกอบเป็นองค์ประกอบเมื่อได้รับโฟกัส
+                    <br> CSS Pseudo-elements : องค์ประกอบ CSS หลอกถูกใช้เพื่อกำหนดสไตล์ส่วนต่าง ๆ ขององค์ประกอบ ตัวอย่างเช่นมันสามารถใช้ในการ: จัดรูปแบบตัวอักษรตัวแรกหรือบรรทัดขององค์ประกอบ แทรกเนื้อหาก่อนหรือหลังเนื้อหาขององค์ประกอบ
+
+
+                </div>
+                <div class="flex-items-3">
+                    <h2>3.Decoration (การตกแต่งการตกแต่งการตกแต่งการตกแต่ง)</h2>
+                    <div class="flex-items-content">3.1 Margin Border Padding Content</div>
+                    <div class="flex-items-content">3.2 Properties in CSS</div>
+                    <div class="flex-items-content">3.3 value in CSS</div>
+
+                </div>
+                <div class="flex-items-4">
+                    <h2>4. Layout (การจัดวางรูปแบบการแสดงผลแบบต่างๆ)</h2>
+                    <div class="flex-items-content">4.1 display
+                        <div class="flex-items-content">4.1.1 display grid</div>
+                        <div class="flex-items-content">4.1.2 display flex</div>
+                    </div>
+                    <div class="flex-items-content">2.2 Properties in CSS</div>
+                    <div class="flex-items-content">2.3 value in CSS</div>
+                </div>
+                <div class="flex-items-5">
+                    <ul>
+                        <li>CSS syntax ประกอบด้วยอะไรบ้าง
+                            <div class="flex-items-content">
+                                <pre>
+        รูปแบบของคำสั่ง CSS นั้นจะประกอบไปด้วย 3 ส่วนคือ <span class="btn">selector {property: value}</span> 
+        <table>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+            </tr>
+            <tr>
+              <td>Peter</td>
+              <td>Griffin</td>
+            </tr>
+            <tr>
+              <td><span class="btn">selector {property: value}</td>
+              <td></span> <span class="btn">td {color: red;border: 1px solid red;}</span></td>
+            </tr>
+          </table>
+1.Selector คือ ส่วน HTML tag ที่เราต้องการจะให้แสดงผล เช่น table ก็จะแสดงผลในส่วนของตาราง
+    <span class="btn"><span style="color: red;">Selector </span> {property: value} </span> <span class="btn">table {color: red;}</span>    
+2.Property คือ ส่วนของคุณสมบัติที่เราต้องการให้แสดง เช่น สีตัวอักษร , ชนิดตัวอักษร , ขนาดตัวอักษ
+    table { color : red }
+3.Value คือ ค่าที่เราต้องการให้แสดง เช่น ตัวอักษรสีแดง , ตัวอักษรแบบ tahoma , ตัวอักษรขนาด 12 pt
+    p { font - family : "sans serif" }
+                                </pre>
+                            </div>
+                        </li>
+                        <li>การเขียน CSS มีกี่แบบอะไรบ้าง</li>
+                        <div class="flex-items-content">
+                            <pre>
+1.แบบ Inline
+    คือการเขียนแทรกลงไปในบรรทัดนั้นๆ ของ tag [X]HTML เลย เช่น
+    <span class="btn">&lt;p style=”font-size: 0.9em; width: 200px; border: solid 1px #000000”>ตัวหนังสือสีดำ อยู่ใน แทก P&lt;/p&gt;</span>
+2.แบบ External
+คือการเขียน แยก css ออกมาเป็นไฟล์ .css ต่างหาก แล้วนำเข้าไปใช้ใน หน้าเว็บด้วย การเรียกโดย ใช้ โดยการพิมพ์
+    <span class="btn">&lt;link rel="stylesheet" href="externalcss.css" type="text/css" /> ไว้ที่ส่วน &lt;head>&lt;/head> ของหน้าเว็บ </span>
+3.และส่วนของไฟล์ html เมื่อเรียก css มาใช้
+และส่วนของไฟล์ html เมื่อเรียก css มาใช้
+    <span class="btn">&lt;link rel="stylesheet" href="externalcss.css" type="text/css" /> </span>
+</pre>
+                        </div>
+                        <li>selector มีกี่แบบอะไรบ้าง</li>
+                        <div class="flex-items-content">
+
+                            1. Class Selectors Class Selectors เป็น Selector ที่เราต้องกำหนดชื่อของ Selector ขึ้นมาเอง โดย Class Selector การเรียกใช้งานต้องระบุชื่อ Class Selectors ให้กับ Tag ของ HTML จึงจะสามารถใช้งานคุณสมบัติของ Class ที่ได้สร้างไว้ได้
+                            <pre class="btn">&lt;style&gt;
+        .myclass{
+            font: bold 12px Tahoma;color: #009;
+        }
+        &lt;/style&gt;
+        </pre> 2. ID Selectors ซึ่งเขียนอยู่ภายใน Tag ของ HTML โดยที่ Tag ของ HTML ใดมี ID ซึ่งตรงกับ ID Selectors ที่กำหนด คุณสมบัติของ CSS ที่กำหนดไว้กับ Selector ก็จะมีผลต่อ Tag นั้น
+                            <pre class="btn">&lt;style&gt;
+            #myid{
+                font: bold 12px Tahoma;color: #009;
+            }
+            &lt;/style&gt;
+            </pre> 3. TAG Selectors สำหรับ Selector ในรูปแบบสุดท้ายที่จะกล่าวถึงในเบื้องต้นนี้เป็น Selector ที่อ้างอิงกับชื่อ Tag ของ HTML โดยตรง เช่น
+                            <pre class="btn">&lt;style&gt;
+                h1{
+                    font-family: Tahoma;
+                }
+                &lt;/style&gt;
+                </pre>
+                        </div>
+                        <li>combinator มีกี่แบบอะไรบ้าง</li>
+                        <div class="flex-items-content">
+                            <pre>
+<span style="flex-items-content">Combinators ได้แบ่งวิธีการเขียน ออกไปอีก 3 ประเภท 4 รูปแบบ คือ
+    1.Descendant combinators : คือ การเขียน Selector เพื่อสั่งการทำงานทั้งหมด ทั้ง ลูก หลาน เหลน โหลน โดยการเขียนนั้น ใช้ "ช่องว่าง" ในการสั่งงาน
+    เช่น article li { } หมายถึง li ทั้งหมดที่มีอยู่ใน article
+    2.Child combinators : คือ การสั่งงานเฉพาะ "ลูก" เท่านั้น ไม่นับรวมหลาน หรือเหลน โหลน การเขียนนั้น ใช้ "เครื่องหมายมากกว่า หรือ greater-than sign (>)
+    " เช่น section>div {} คือ ให้กระทำการใดๆ กับ div ที่เป็น ลูกของ section เท่านั้น ถ้ามี div ซ้อนอยู่ใน div อีกที จะไม่ถูกสั่งการ
+    3.Sibling combinators :
+    4.Adjacent sibling combinator
+    5.General sibling combinator
+                        </pre>
+                            </span>
+                        </div>
+
+                        <li>ให้สร้าง page review CSS </li>
+                        <div class="flex-items-content">
+
+                            <h2>Star Rating</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
+                        <li>ใช้ table ในการตอบโจทย์แต่ละข้อ</li>
+                        <div class="flex-items-content">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Job Title</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>James</td>
+                                        <td>Matman</td>
+                                        <td>Chief Sandwich Eater</td>
+                                    </tr>
+                                    <tr>
+                                        <td>The</td>
+                                        <td>Tick</td>
+                                        <td>Crimefighter Sorta</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <li>ขนาดฟอนด์หัวข้อต้องใหญ่กว่า ข้อมูล</li>
+                        <div class="flex-items-content">
+                            <pre>
+่เช่น Heading แล้วต่อมา Decreption เป้น paragrapt
+                        </pre>
+                        </div>
+                        <li>ให้แต่ละกลุ่มออกมาอธิบายการใช้ combinator อย่างละ 1 ชนิด</li>
+                        <div class="flex-items-content">
+                            <pre>Descendant combinators
+คือ การเขียน Selector เพื่อสั่งการทำงานทั้งหมด ทั้ง ลูก หลาน เหลน โหลน โดยการเขียนนั้น ใช้ "ช่องว่าง" ในการสั่งงาน เช่น article li
+{ } หมายถึง li ทั้งหมดที่มีอยู่ใน article
+
+                        </pre>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+            </div>
+        </fieldset>
+    </form>
+
+    <h2 style="text-align: center ;">60 minutes
+    </h2>
+    <table>
+        <thead>
+            <tr>
+                <th>property และ value คืออะไรแตกต่างกันอย่างไร
+                </th>
+                <th>property ที่สอนใน precamp มีกี่กลุ่มอะไรบ้าง</th>
+                <th>value unit มีกี่ประเภทอะไรบ้างแต่ละ ประเภทคืออะไร</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Values คือค่าของ property นั้นๆ ครับ เช่น 500px สำหรับความกว้าง</td>
+                <td>Background ภาพพืนหลัง Margin ขอบนอก Paading ขอบนอก border เส้นขอบ</td>
+                <td>คือค่าของ property นั้นๆ ครับ เช่น 500px สำหรับความกว้าง ค่าสี ค่าตัวอักษร เช่น18px และอืนๆ
+
+                </td>
+            </tr>
+            <tr>
+                <td> Value ชื่อคุณสมบัติของ css เช่น width, height, position,width, height ฯลฯ
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- END 60 Minutes -->
+    <h2 style="text-align: center ;">90 minutes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>value ใน display property มีอะไรบ้าง
+                </th>
+                <th>grid และ flex แตกต่างกันอย่างไร</th>
+                <th>justify and align แตกต่างกันอย่างไร
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <pre>{display: none;} = ไม่ตั่งค่า
+{display: inline;} = เป็นค่าเริ่มต้น 
+{display: block;} = แถวเดียวกัน
+{display: inline-block;} = ซ่อนกัน
+                </pre></td>
+                <td> <b>Flex</b> เราสามารถจัดวางของต่างๆภายใน layout 1 แถว อาจจะเป็นแนวตั้งหรือแนวนอน Grid เราสามารถจัดของไว้ตรงไหนก็ได้ใน grid layout เช่นตัวอย่างตามรูปด้านล่าง เราบอก grid ว่าให้ layout ของ header เต็ม row บรรทัดต่อมาให้ menu เป็น 2 columns
+                    content เป็น 8 columns อะไรประมาณนั้น
+                    <br><img src="https://miro.medium.com/max/1400/0*k2mzn9WWenUckKyP.png" width="100%" alt="">
+                </td>
+                <td>justify-contentคุณสมบัติสอดคล้องรายการภาชนะที่มีความยืดหยุ่นเมื่อรายการที่ไม่ได้ใช้พื้นที่ที่มีอยู่ทั้งหมดในหลักแกน (แนวนอน) text-align is set to "justify"<br>
+
+
+                </td>
+            </tr>
+
+
+
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>position คืออะไร และ มีอะไรบ้าง</th>
+                <th>z-index คืออะไรใช้อย่างไร</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <pre>
+position คือ ระบุชนิดคุณสมบัติของวิธีการวางตำแหน่งที่ใช้สำหรับองค์ประกอบ <ul>
+<li>static</li> <span> มันจะถูกวางตำแหน่งตามการไหลปกติของหน้า</span>
+<li>relative</li> <span>ตำแหน่งสัมพันธ์กับตำแหน่งปกติ</span>
+<li>fixed</li> <span>อยู่ในตำแหน่งที่สัมพันธ์กับวิวพอร์ตซึ่งหมายความว่ามันจะอยู่ในสถานที่เดียวกันเสมอแม้ว่าหน้าจะถูกเลื่อน <br> คุณสมบัติด้านบนขวาล่างและซ้ายใช้เพื่อจัดตำแหน่งองค์ประกอบ</span>
+<li>absolute</li> <span>on: absolute;วางตำแหน่งสัมพันธ์กับบรรพบุรุษที่อยู่ใกล้ที่สุดตำแหน่ง (แทนตำแหน่งที่สัมพันธ์กับวิวพอร์ตเช่นคงที่)</span>
+<li>sticky</li> <span>จัดตำแหน่งตามตำแหน่งการเลื่อนของผู้ใช้</span></ul> 
+                </pre></td>
+                <td>
+                    คุณสมบัติระบุลำดับการเรียงองค์ประกอบ องค์ประกอบที่มีลำดับสแต็กที่มากขึ้นจะอยู่ด้านหน้าขององค์ประกอบที่มีลำดับสแต็กที่ต่ำกว่าเสมอ
+                </td>
+            </tr>
+
+
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>

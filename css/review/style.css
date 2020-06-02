@@ -1,0 +1,112 @@
+.flex-container {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-flow: row wrap; */
+    /* justify-content: space-around; */
+    background-color: skyblue;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.flex-items-1,
+.flex-items-2,
+.flex-items-3,
+.flex-items-4,
+.flex-items-5 {
+    width: 40vh;
+    background-color: #ccc;
+    margin: 10px;
+    word-wrap: break-word;
+    padding: 10px;
+    font-size: 0.7vw;
+}
+
+.flex-container h2 {
+    font-size: 1vw;
+    background: whitesmoke;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.flex-items-1 {
+    order: 0;
+    word-wrap: break-word;
+}
+
+.flex-items-2 {
+    order: wxw;
+    word-wrap: break-word;
+}
+
+.flex-items-3 {}
+
+.flex-items-4 {}
+
+.flex-items-5 {
+    width: 170vh;
+}
+
+.flex-items-content {
+    font-size: 0.8vw;
+    background: #F8F8FF;
+    padding: 5px;
+    padding-left: 10px;
+    margin: 2px;
+    border: 2px solid rgba(126, 100, 100, 0.2);
+}
+
+pre {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    overflow-x: auto;
+    padding: 0.5em;
+    color: #abb2bf;
+    background: #282c34;
+}
+
+table,
+th,
+td {
+    color: #000;
+    border: 1px #000 red;
+}
+
+li {
+    font-size: 1.5rem;
+}
+
+.checked {
+    color: orange;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* Zebra striping */
+
+tr:nth-of-type(odd) {
+    background: #eee;
+}
+
+th {
+    background: #333;
+    color: white;
+    font-weight: bold;
+}
+
+td,
+th {
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: left;
+}

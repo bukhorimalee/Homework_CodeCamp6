@@ -1,0 +1,33 @@
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-areas: "header header" "content sidebar" "footer footer";
+            grid-template-columns: 1fr 200px;
+            grid-template-rows: 150px 200px 60px;
+            background-color: green;
+            padding: 1em;
+        }
+        
+        .header {
+            grid-area: header;
+        }
+        
+        .content {
+            grid-area: content;
+        }
+        
+        .sidebar {
+            grid-area: sidebar;
+        }
+        
+        .footer {
+            grid-area: footer;
+        }
+        
+        .grid {
+            border: 1px solid #fff;
+        }
