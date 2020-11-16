@@ -1,6 +1,7 @@
 # Basic part1
 
 **Table of Contents**
+### Lab 1
 
 
 > ### Lab 1 ตัวแปรและประเภทของข้อมูล > slide 43
@@ -15,7 +16,5 @@
 ```javascript
  let human = "";
     let name = "";
-    name = "surasak";
-    human = name;
-    console.log(human);
+    
 ```
