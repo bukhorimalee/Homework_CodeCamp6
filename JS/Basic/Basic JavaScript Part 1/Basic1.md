@@ -2,17 +2,13 @@
 
 **Table of Contents**
 
-[TOCM]
 
-[TOC]
+> ### Lab 1 ตัวแปรและประเภทของข้อมูล > slide 43
 
-### Lab 1 
-
-### Lab 1 
-ตัวแปรและประเภทของข้อมูล > slide 43
-
-* - HTML enhanced for web apps!
-* - awesome web-based text 
+- ให้ประกาศตัวแปรชื่อ human และ name
+- ใส่ชื่อตัวเองลงในตัวแปร name
+- นำค่าที่อยู่ในตัวแปร name ไปใส่ให้ human
+- เมื่อ console.log(human) ออกมาต้องเป็นชื่อตัวเอง
 
 
 
