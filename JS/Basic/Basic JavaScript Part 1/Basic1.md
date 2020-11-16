@@ -1,8 +1,7 @@
 # Basic part1
 
 **Table of Contents**
-### Lab 1
-### Lab 2
+### Lab 1 ### Lab 2
 
 > ### Lab 1 ตัวแปรและประเภทของข้อมูล
 - ให้ประกาศตัวแปรชื่อ human และ name
